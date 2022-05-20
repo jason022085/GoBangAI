@@ -343,10 +343,10 @@ class AI_Player(GoBang):
         """
         Runs the min_max_algorithm on a given board_sate for a given side, to a given depth in order to find the best move
         Args:
-            alpha (float): Used when this is called recursively, normally ignore
-            beta (float): Used when this is called recursively, normally ignore
+            alpha: float
+            beta: float
         Returns:
-            (best_score(int), best_score_move((int, int)): the move found to be best and what it's min-max score was
+            best_score, best_score_move
         """
         best_score_move = None
         possibleMovesList = self.possibleMoves(remainedBoard)
